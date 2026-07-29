@@ -1,0 +1,61 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run alarm report",
+			"type": "shell",
+			"command": "python relatorioAlarme.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run alarm report",
+			"type": "shell",
+			"command": "python relatorioAlarme.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run alarm report",
+			"type": "shell",
+			"command": "python relatorioAlarme.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run alarm report",
+			"type": "shell",
+			"command": "python relatorioAlarme.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run alarm report",
+			"type": "shell",
+			"command": "python relatorioAlarme.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check pywin32",
+			"type": "shell",
+			"command": "python -c \"import win32com.client as win32; print('pywin32 ok')\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Kill Excel",
+			"type": "shell",
+			"command": "taskkill /F /IM EXCEL.EXE /T",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run alarm report",
+			"type": "shell",
+			"command": "python relatorioAlarme.py",
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

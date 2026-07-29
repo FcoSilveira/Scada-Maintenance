@@ -1,0 +1,1305 @@
+{
+  "arquivo_gerado": "C:\\Users\\admin\\Documents\\Python\\SCADA_maintenence\\AUDITORIA\\datapoints\\Calculados\\saida\\analisado_corrigido.json",
+  "total_adicionados": 8,
+  "total_substituidos_funcionais": 63,
+  "total_substituidos_topologicos": 0,
+  "adicionados": [
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_MM1_MED_Teste Acumulador (MWh)",
+      "destino": "Usina total",
+      "name": "GRA_MM1_MED_Teste Acumulador (MWh)",
+      "xid": "GRA_MM1_MED_Teste Acumulador (MWh)",
+      "modelo_espelho": {
+        "name": "IRA_MM1_MED_Teste Acumulador (MWh)",
+        "xid": "IRA_MM1_MED_Teste Acumulador (MWh)"
+      }
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_CAL_PR Ajustado Multimedidor (%)",
+      "destino": "Usina total",
+      "name": "GRA_CAL_PR Ajustado Multimedidor (%)",
+      "xid": "GRA_CAL_PR Ajustado Multimedidor (%)",
+      "modelo_espelho": {
+        "name": "IRA_CAL_PR Ajustado Multimedidor (%)",
+        "xid": "IRA_CAL_PR Ajustado Multimedidor (%)"
+      }
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_MM1_CAL_Energia Acumulada Teste (MWh)",
+      "destino": "Usina total",
+      "name": "GRA_MM1_CAL_Energia Acumulada Teste (MWh)",
+      "xid": "GRA_MM1_CAL_Energia Acumulada Teste (MWh)",
+      "modelo_espelho": {
+        "name": "IRA_MM1_CAL_Energia Acumulada Teste (MWh)",
+        "xid": "IRA_MM1_CAL_Energia Acumulada Teste (MWh)"
+      }
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_CAL_PR Simples Multimedidor (%)",
+      "destino": "Usina total",
+      "name": "GRA_CAL_PR Simples Multimedidor (%)",
+      "xid": "GRA_CAL_PR Simples Multimedidor (%)",
+      "modelo_espelho": {
+        "name": "IRA_CAL_PR Simples Multimedidor (%)",
+        "xid": "IRA_CAL_PR Simples Multimedidor (%)"
+      }
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_RELE1_CAL_Energia Ativa Exportada (KWh)",
+      "destino": "Usina total",
+      "name": "GRA_RELE1_CAL_Energia Ativa Exportada (KWh)",
+      "xid": "GRA_RELE1_CAL_Energia Ativa Exportada (KWh)",
+      "modelo_espelho": {
+        "name": "IRA_RELE1_CAL_Energia Ativa Exportada (KWh)",
+        "xid": "IRA_RELE1_CAL_Energia Ativa Exportada (KWh)"
+      }
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_RELE1_CAL_Potência Ativa 5 min. (KW)",
+      "destino": "Usina total",
+      "name": "GRA_RELE1_CAL_Potência Ativa 5 min. (KW)",
+      "xid": "GRA_RELE1_CAL_Potência Ativa 5 min. (KW)",
+      "modelo_espelho": {
+        "name": "IRA_RELE1_CAL_Potência Ativa 5 min. (KW)",
+        "xid": "IRA_RELE1_CAL_Potência Ativa 5 min. (KW)"
+      }
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_QGBT1_CMD_Fechar Disjuntor",
+      "destino": "Usina total",
+      "name": "GRA_QGBT1_CMD_Fechar Disjuntor",
+      "xid": "GRA_QGBT1_CMD_Fechar Disjuntor",
+      "modelo_espelho": {
+        "name": "IRA_QGBT1_CMD_Fechar Disjuntor",
+        "xid": "IRA_QGBT1_CMD_Fechar Disjuntor"
+      }
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_QGBT1_CMD_Abrir Disjuntor",
+      "destino": "Usina total",
+      "name": "GRA_QGBT1_CMD_Abrir Disjuntor",
+      "xid": "GRA_QGBT1_CMD_Abrir Disjuntor",
+      "modelo_espelho": {
+        "name": "IRA_QGBT1_CMD_Abrir Disjuntor",
+        "xid": "IRA_QGBT1_CMD_Abrir Disjuntor"
+      }
+    }
+  ],
+  "substituidos_funcionais": [
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.1_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.1_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.1_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.1_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.1_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.1_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.2_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.2_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.2_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.2_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.2_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.2_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.3_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.3_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.3_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.3_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.3_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.3_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.4_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.4_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.4_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.4_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.4_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.4_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.5_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.5_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.5_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.5_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.5_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.5_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.6_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.6_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.6_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.6_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.6_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.6_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.7_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.7_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.7_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.7_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.7_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.7_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.8_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.8_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.8_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.8_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.8_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.8_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Diário",
+      "antes": {
+        "name": "GRA_Inv_1.9_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.9_CAL_Fator de Capacidade Diário"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.9_CAL_Fator de Capacidade Diário",
+        "xid": "GRA_Inv_1.9_CAL_Fator de Capacidade Diário"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.9_CAL_Fator de Capacidade Diário",
+        "xid": "IRA_Inv_1.9_CAL_Fator de Capacidade Diário"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.1_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.1_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.1_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.1_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.1_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.1_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.2_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.2_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.2_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.2_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.2_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.2_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.3_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.3_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.3_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.3_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.3_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.3_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.4_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.4_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.4_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.4_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.4_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.4_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.5_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.5_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.5_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.5_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.5_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.5_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.6_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.6_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.6_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.6_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.6_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.6_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.7_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.7_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.7_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.7_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.7_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.7_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.8_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.8_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.8_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.8_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.8_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.8_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Mensal",
+      "antes": {
+        "name": "GRA_Inv_1.9_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.9_CAL_Fator de Capacidade Mensal"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.9_CAL_Fator de Capacidade Mensal",
+        "xid": "GRA_Inv_1.9_CAL_Fator de Capacidade Mensal"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.9_CAL_Fator de Capacidade Mensal",
+        "xid": "IRA_Inv_1.9_CAL_Fator de Capacidade Mensal"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.1_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.1_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.1_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.1_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.1_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.1_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.2_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.2_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.2_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.2_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.2_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.2_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.3_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.3_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.3_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.3_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.3_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.3_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.4_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.4_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.4_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.4_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.4_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.4_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.5_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.5_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.5_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.5_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.5_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.5_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.6_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.6_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.6_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.6_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.6_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.6_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.7_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.7_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.7_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.7_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.7_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.7_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.8_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.8_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.8_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.8_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.8_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.8_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Fator de Capacidade Anual",
+      "antes": {
+        "name": "GRA_Inv_1.9_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.9_CAL_Fator de Capacidade Anual"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.9_CAL_Fator de Capacidade Anual",
+        "xid": "GRA_Inv_1.9_CAL_Fator de Capacidade Anual"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.9_CAL_Fator de Capacidade Anual",
+        "xid": "IRA_Inv_1.9_CAL_Fator de Capacidade Anual"
+      },
+      "diferencas": [
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_CAL_PR Ajustado 1 (%)",
+      "antes": {
+        "name": "GRA_CAL_PR Ajustado 1 (%)",
+        "xid": "GRA_CAL_PR Ajustado 1 (%)"
+      },
+      "depois": {
+        "name": "GRA_CAL_PR Ajustado 1 (%)",
+        "xid": "GRA_CAL_PR Ajustado 1 (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_CAL_PR Ajustado 1 (%)",
+        "xid": "IRA_CAL_PR Ajustado 1 (%)"
+      },
+      "diferencas": [
+        "pointLocator.script: valor diferente\n         Espelho:   '// Entradas\\nvar energy = energia.value; // Produção do dia em kWh\\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\\nvar temp = Module1.value;  // Temperatura instantânea do módulo em °C\\nvar kwp = capacity.value;  // Potência pico do sistema em kW\\nvar coef_temp = -0.0030;   // Coeficiente de temperatura (%/°C)\\nexpectedEnergy = expected.value; // Energia esperada \\n\\n// Corrigir energia para Wh\\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\\n\\n// Performance Ratio com validação\\nvar PR = 0;\\nif (expectedEnergy > 0) {\\n    PR = energyWh / (expectedEnergy * 1000); // Energia Esperada em Wh\\n    if (PR > 1) {\\n        PR = 1; // Força o valor para 100% se passar de 100%\\n    }\\n}\\n\\n// Resultado final em porcentagem\\nreturn PR * 100;\\n'\n         Analisado: '// Entradas\\nvar energy = energia.value; // Produção do dia em kWh\\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\\nvar kwp = capacity.value;  // Potência pico do sistema em kW\\n\\n// Energia esperada simples\\nvar expectedEnergy = irrad * kwp;  // em Wh\\n\\n// Corrigir energia para Wh\\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\\n\\n// Performance Ratio com validação\\nvar PR = 0;\\nif (expectedEnergy > 0) {\\n    PR = energyWh / expectedEnergy; // Energia Esperada em Wh\\n    if (PR > 1) {\\n        PR = 1; // Força o valor para 100% se passar de 100%\\n    }\\n}\\n\\n// Resultado final em porcentagem\\nreturn PR * 100;\\n'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_CAL_PR Ajustado Total (%)",
+      "antes": {
+        "name": "GRA_CAL_PR Ajustado Total (%)",
+        "xid": "GRA_CAL_PR Ajustado Total (%)"
+      },
+      "depois": {
+        "name": "GRA_CAL_PR Ajustado Total (%)",
+        "xid": "GRA_CAL_PR Ajustado Total (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_CAL_PR Ajustado Total (%)",
+        "xid": "IRA_CAL_PR Ajustado Total (%)"
+      },
+      "diferencas": [
+        "pointLocator.script: valor diferente\n         Espelho:   '// Entradas\\nvar energy = energia.value; // Produção do dia em kWh\\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\\nvar temp = Module1.value;  // Temperatura instantânea do módulo em °C\\nvar kwp = capacity.value;  // Potência pico do sistema em kW\\nvar coef_temp = -0.0030;   // Coeficiente de temperatura (%/°C)\\nexpectedEnergy = expected.value; // Energia esperada \\n\\n// Corrigir energia para Wh\\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\\n\\n// Performance Ratio com validação\\nvar PR = 0;\\nif (expectedEnergy > 0) {\\n    PR = energyWh / (expectedEnergy * 1000); // Energia Esperada em Wh\\n    if (PR > 1) {\\n        PR = 1; // Força o valor para 100% se passar de 100%\\n    }\\n}\\n\\n// Resultado final em porcentagem\\nreturn PR * 100;\\n'\n         Analisado: '// Entradas\\nvar energy = energia.value; // Produção do dia em kWh\\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\\nvar kwp = capacity.value;  // Potência pico do sistema em kW\\n\\n// Energia esperada simples\\nvar expectedEnergy = irrad * kwp;  // em Wh\\n\\n// Corrigir energia para Wh\\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\\n\\n// Performance Ratio com validação\\nvar PR = 0;\\nif (expectedEnergy > 0) {\\n    PR = energyWh / expectedEnergy; // Energia Esperada em Wh\\n    if (PR > 1) {\\n        PR = 1; // Força o valor para 100% se passar de 100%\\n    }\\n}\\n\\n// Resultado final em porcentagem\\nreturn PR * 100;\\n'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_CAL_Potência Ativa Total Loggers (KW)",
+      "antes": {
+        "name": "GRA_CAL_Potência Ativa Total Loggers (KW)",
+        "xid": "GRA_CAL_Potência Ativa Total Loggers (KW)"
+      },
+      "depois": {
+        "name": "GRA_CAL_Potência Ativa Total Loggers (KW)",
+        "xid": "GRA_CAL_Potência Ativa Total Loggers (KW)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_CAL_Potência Ativa Total Loggers (KW)",
+        "xid": "IRA_CAL_Potência Ativa Total Loggers (KW)"
+      },
+      "diferencas": [
+        "pointLocator.script: valor diferente\n         Espelho:   'return (monitor_a.value ? a.value : 0);'\n         Analisado: 'energy = (monitor_a.value ? a.value : 0);\\nreturn energy;'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_RELE1_STA_Estado do Disjuntor",
+      "antes": {
+        "name": "GRA_RELE1_STA_Estado do Disjuntor",
+        "xid": "GRA_RELE1_STA_Estado do Disjuntor"
+      },
+      "depois": {
+        "name": "GRA_RELE1_STA_Estado do Disjuntor",
+        "xid": "GRA_RELE1_STA_Estado do Disjuntor"
+      },
+      "modelo_espelho": {
+        "name": "IRA_RELE1_STA_Estado do Disjuntor",
+        "xid": "IRA_RELE1_STA_Estado do Disjuntor"
+      },
+      "diferencas": [
+        "eventDetectors[0].alias: valor diferente\n         Espelho:   'UFV Iramaia - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado'\n         Analisado: 'UFV Gravatá - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado'",
+        "eventDetectors[1].alias: valor diferente\n         Espelho:   'UFV Iramaia - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto'\n         Analisado: 'UFV Gravatá - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.1_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.1_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.1_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.1_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.1_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.1_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.2_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.2_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.2_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.2_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.2_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.2_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.3_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.3_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.3_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.3_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.3_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.3_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.4_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.4_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.4_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.4_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.4_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.4_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.5_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.5_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.5_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.5_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.5_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.5_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.6_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.6_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.6_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.6_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.6_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.6_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.7_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.7_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.7_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.7_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.7_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.7_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.8_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.8_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.8_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.8_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.8_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.8_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Energia Esperada (KWh)",
+      "antes": {
+        "name": "GRA_Inv_1.9_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.9_CAL_Energia Esperada (KWh)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.9_CAL_Energia Esperada (KWh)",
+        "xid": "GRA_Inv_1.9_CAL_Energia Esperada (KWh)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.9_CAL_Energia Esperada (KWh)",
+        "xid": "IRA_Inv_1.9_CAL_Energia Esperada (KWh)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.1_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.1_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.1_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.1_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.1_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.1_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.2_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.2_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.2_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.2_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.2_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.2_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.3_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.3_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.3_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.3_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.3_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.3_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.4_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.4_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.4_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.4_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.4_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.4_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.5_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.5_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.5_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.5_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.5_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.5_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.6_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.6_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.6_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.6_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.6_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.6_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.7_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.7_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.7_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.7_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.7_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.7_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.8_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.8_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.8_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.8_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.8_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.8_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Ajustado (%)",
+      "antes": {
+        "name": "GRA_Inv_1.9_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.9_CAL_PR Ajustado (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.9_CAL_PR Ajustado (%)",
+        "xid": "GRA_Inv_1.9_CAL_PR Ajustado (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.9_CAL_PR Ajustado (%)",
+        "xid": "IRA_Inv_1.9_CAL_PR Ajustado (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[3].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.1_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.1_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.1_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.1_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.1_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.1_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.2_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.2_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.2_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.2_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.2_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.2_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.3_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.3_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.3_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.3_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.3_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.3_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.4_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.4_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.4_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.4_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.4_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.4_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.5_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.5_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.5_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.5_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.5_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.5_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.6_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.6_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.6_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.6_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.6_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.6_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.7_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.7_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.7_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.7_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.7_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.7_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.8_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.8_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.8_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.8_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.8_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.8_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_PR Simples (%)",
+      "antes": {
+        "name": "GRA_Inv_1.9_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.9_CAL_PR Simples (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.9_CAL_PR Simples (%)",
+        "xid": "GRA_Inv_1.9_CAL_PR Simples (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.9_CAL_PR Simples (%)",
+        "xid": "IRA_Inv_1.9_CAL_PR Simples (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[2].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'\n         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_Smart1_CAL_Rendimento (%)",
+      "antes": {
+        "name": "GRA_Smart1_CAL_Rendimento (%)",
+        "xid": "GRA_Smart1_CAL_Rendimento (%)"
+      },
+      "depois": {
+        "name": "GRA_Smart1_CAL_Rendimento (%)",
+        "xid": "GRA_Smart1_CAL_Rendimento (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Smart1_CAL_Rendimento (%)",
+        "xid": "IRA_Smart1_CAL_Rendimento (%)"
+      },
+      "diferencas": [
+        "pointLocator.script: valor diferente\n         Espelho:   'const calculo = (energia_real.value / energia_esperada.value) * 100;\\n\\nreturn calculo;'\n         Analisado: 'return (energia_real.value / energia_esperada.value) * 100;'"
+      ]
+    },
+    {
+      "nivel": "INVERSOR",
+      "familia": "INVERSOR:{PREFIXO}_Inv_{INVERSOR_GLOBAL}_CAL_Rendimento (%)",
+      "antes": {
+        "name": "GRA_Inv_1.10_CAL_Rendimento (%)",
+        "xid": "GRA_Inv_1.10_CAL_Rendimento (%)"
+      },
+      "depois": {
+        "name": "GRA_Inv_1.10_CAL_Rendimento (%)",
+        "xid": "GRA_Inv_1.10_CAL_Rendimento (%)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_Inv_1.10_CAL_Rendimento (%)",
+        "xid": "IRA_Inv_1.10_CAL_Rendimento (%)"
+      },
+      "diferencas": [
+        "pointLocator.context[0].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Inv_GLOBAL_10_MED_Energia Diária (KWh)'\n         Analisado: '{PREFIXO}_Inv_GLOBAL_10_MED_Potência Ativa (KW)'",
+        "pointLocator.context[0].varName: valor diferente\n         Espelho:   'energia_real'\n         Analisado: 'potencia'",
+        "pointLocator.context[1].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_CAL_Energia Esperada 1 (KWh)'\n         Analisado: '{PREFIXO}_Inv_GLOBAL_10_VIR_Potência Pico (KWp)'",
+        "pointLocator.context[1].varName: valor diferente\n         Espelho:   'energia_esperada'\n         Analisado: 'capacity'",
+        "pointLocator.script: valor diferente\n         Espelho:   'return (energia_real.value / energia_esperada.value) * 100;'\n         Analisado: 'return (potencia.value / capacity.value) * 100;'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_QGBT1_STA_Disjuntor Geral Fechado",
+      "antes": {
+        "name": "GRA_QGBT1_STA_Disjuntor Geral Fechado",
+        "xid": "GRA_QGBT1_STA_Disjuntor Geral Fechado"
+      },
+      "depois": {
+        "name": "GRA_QGBT1_STA_Disjuntor Geral Fechado",
+        "xid": "GRA_QGBT1_STA_Disjuntor Geral Fechado"
+      },
+      "modelo_espelho": {
+        "name": "IRA_QGBT1_STA_Disjuntor Geral Fechado",
+        "xid": "IRA_QGBT1_STA_Disjuntor Geral Fechado"
+      },
+      "diferencas": [
+        "eventDetectors[0].alias: valor diferente\n         Espelho:   'UFV Iramaia - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Fechado'\n         Analisado: 'UFV Gravatá - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Fechado'",
+        "pointLocator.context[0].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Smart1_STA_Status - DI01'\n         Analisado: '{PREFIXO}_IO1_STA_MOD1_Estado da Entrada Digital 1'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_QGBT1_STA_Disjuntor Geral Aberto",
+      "antes": {
+        "name": "GRA_QGBT1_STA_Disjuntor Geral Aberto",
+        "xid": "GRA_QGBT1_STA_Disjuntor Geral Aberto"
+      },
+      "depois": {
+        "name": "GRA_QGBT1_STA_Disjuntor Geral Aberto",
+        "xid": "GRA_QGBT1_STA_Disjuntor Geral Aberto"
+      },
+      "modelo_espelho": {
+        "name": "IRA_QGBT1_STA_Disjuntor Geral Aberto",
+        "xid": "IRA_QGBT1_STA_Disjuntor Geral Aberto"
+      },
+      "diferencas": [
+        "enabled: valor diferente\n         Espelho:   True\n         Analisado: False",
+        "eventDetectors[0].alias: valor diferente\n         Espelho:   'UFV Iramaia - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Aberto'\n         Analisado: 'UFV Gravatá - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Aberto'",
+        "pointLocator.context[0].dataPointXid: valor diferente\n         Espelho:   '{PREFIXO}_Smart1_STA_Status - DI02'\n         Analisado: '{PREFIXO}_IO1_STA_MOD1_Estado da Entrada Digital 1'"
+      ]
+    },
+    {
+      "nivel": "USINA",
+      "familia": "USINA:{PREFIXO}_CAL_Acumulado Diário - POA (Wh/m²)",
+      "antes": {
+        "name": "GRA_CAL_Acumulado Diário - POA (Wh/m²)",
+        "xid": "GRA_CAL_Acumulado Diário - POA (Wh/m²)"
+      },
+      "depois": {
+        "name": "GRA_CAL_Acumulado Diário - POA (Wh/m²)",
+        "xid": "GRA_CAL_Acumulado Diário - POA (Wh/m²)"
+      },
+      "modelo_espelho": {
+        "name": "IRA_CAL_Acumulado Diário - POA (Wh/m²)",
+        "xid": "IRA_CAL_Acumulado Diário - POA (Wh/m²)"
+      },
+      "diferencas": [
+        "pointLocator.context: quantidade de itens diferente — espelho=3, analisado=2"
+      ]
+    }
+  ],
+  "substituidos_topologicos": [],
+  "avisos": []
+}

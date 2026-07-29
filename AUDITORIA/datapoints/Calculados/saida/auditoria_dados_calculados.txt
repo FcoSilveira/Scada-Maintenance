@@ -1,0 +1,783 @@
+====================================================================================================
+AUDITORIA SEMÂNTICA DO DATASOURCE DADOS CALCULADOS
+====================================================================================================
+
+Arquivo espelho:   C:\Users\admin\Documents\Python\SCADA_maintenence\AUDITORIA\datapoints\Calculados\entrada\espelho.json
+Arquivo analisado: C:\Users\admin\Documents\Python\SCADA_maintenence\AUDITORIA\datapoints\Calculados\entrada\analisado.json
+JSON corrigido:    C:\Users\admin\Documents\Python\SCADA_maintenence\AUDITORIA\datapoints\Calculados\saida\analisado_corrigido.json
+Manifesto:         C:\Users\admin\Documents\Python\SCADA_maintenence\AUDITORIA\datapoints\Calculados\saida\ajustes_aplicados.json
+Prefixo espelho:   IRA
+Prefixo analisado: GRA
+
+TOPOLOGIAS INFORMADAS
+----------------------------------------------------------------------------------------------------
+Espelho: 1 skid(s), 10 inversor(es)
+  Skid global 1: 10 inversor(es)
+  Mapeamento global dos inversores:
+    Global 1 -> Inv_1.1
+    Global 2 -> Inv_1.2
+    Global 3 -> Inv_1.3
+    Global 4 -> Inv_1.4
+    Global 5 -> Inv_1.5
+    Global 6 -> Inv_1.6
+    Global 7 -> Inv_1.7
+    Global 8 -> Inv_1.8
+    Global 9 -> Inv_1.9
+    Global 10 -> Inv_1.10
+
+Analisado: 1 skid(s), 10 inversor(es)
+  Skid global 1: 10 inversor(es)
+  Mapeamento global dos inversores:
+    Global 1 -> Inv_1.1
+    Global 2 -> Inv_1.2
+    Global 3 -> Inv_1.3
+    Global 4 -> Inv_1.4
+    Global 5 -> Inv_1.5
+    Global 6 -> Inv_1.6
+    Global 7 -> Inv_1.7
+    Global 8 -> Inv_1.8
+    Global 9 -> Inv_1.9
+    Global 10 -> Inv_1.10
+
+RESUMO
+----------------------------------------------------------------------------------------------------
+Datapoints no espelho:                193
+Datapoints no analisado:              249
+Correspondências iguais:              122
+Correspondências com diferenças:      63
+Datapoints faltantes adicionados:     8
+Datapoints extras mantidos:           64
+Revisões topológicas aplicadas:       0
+Duplicados no espelho:                0
+Duplicados no analisado:              0
+Avisos na geração automática:         0
+
+====================================================================================================
+1. DATAPOINTS FALTANTES ADICIONADOS AO JSON CORRIGIDO
+====================================================================================================
+
+1. [USINA] Usina total
+   Modelo no espelho: IRA_MM1_MED_Teste Acumulador (MWh) [IRA_MM1_MED_Teste Acumulador (MWh)]
+   Nome criado: GRA_MM1_MED_Teste Acumulador (MWh)
+   XID criado:  GRA_MM1_MED_Teste Acumulador (MWh)
+   Família lógica: USINA:{PREFIXO}_MM1_MED_Teste Acumulador (MWh)
+
+2. [USINA] Usina total
+   Modelo no espelho: IRA_CAL_PR Ajustado Multimedidor (%) [IRA_CAL_PR Ajustado Multimedidor (%)]
+   Nome criado: GRA_CAL_PR Ajustado Multimedidor (%)
+   XID criado:  GRA_CAL_PR Ajustado Multimedidor (%)
+   Família lógica: USINA:{PREFIXO}_CAL_PR Ajustado Multimedidor (%)
+
+3. [USINA] Usina total
+   Modelo no espelho: IRA_MM1_CAL_Energia Acumulada Teste (MWh) [IRA_MM1_CAL_Energia Acumulada Teste (MWh)]
+   Nome criado: GRA_MM1_CAL_Energia Acumulada Teste (MWh)
+   XID criado:  GRA_MM1_CAL_Energia Acumulada Teste (MWh)
+   Família lógica: USINA:{PREFIXO}_MM1_CAL_Energia Acumulada Teste (MWh)
+
+4. [USINA] Usina total
+   Modelo no espelho: IRA_CAL_PR Simples Multimedidor (%) [IRA_CAL_PR Simples Multimedidor (%)]
+   Nome criado: GRA_CAL_PR Simples Multimedidor (%)
+   XID criado:  GRA_CAL_PR Simples Multimedidor (%)
+   Família lógica: USINA:{PREFIXO}_CAL_PR Simples Multimedidor (%)
+
+5. [USINA] Usina total
+   Modelo no espelho: IRA_RELE1_CAL_Energia Ativa Exportada (KWh) [IRA_RELE1_CAL_Energia Ativa Exportada (KWh)]
+   Nome criado: GRA_RELE1_CAL_Energia Ativa Exportada (KWh)
+   XID criado:  GRA_RELE1_CAL_Energia Ativa Exportada (KWh)
+   Família lógica: USINA:{PREFIXO}_RELE1_CAL_Energia Ativa Exportada (KWh)
+
+6. [USINA] Usina total
+   Modelo no espelho: IRA_RELE1_CAL_Potência Ativa 5 min. (KW) [IRA_RELE1_CAL_Potência Ativa 5 min. (KW)]
+   Nome criado: GRA_RELE1_CAL_Potência Ativa 5 min. (KW)
+   XID criado:  GRA_RELE1_CAL_Potência Ativa 5 min. (KW)
+   Família lógica: USINA:{PREFIXO}_RELE1_CAL_Potência Ativa 5 min. (KW)
+
+7. [USINA] Usina total
+   Modelo no espelho: IRA_QGBT1_CMD_Fechar Disjuntor [IRA_QGBT1_CMD_Fechar Disjuntor]
+   Nome criado: GRA_QGBT1_CMD_Fechar Disjuntor
+   XID criado:  GRA_QGBT1_CMD_Fechar Disjuntor
+   Família lógica: USINA:{PREFIXO}_QGBT1_CMD_Fechar Disjuntor
+
+8. [USINA] Usina total
+   Modelo no espelho: IRA_QGBT1_CMD_Abrir Disjuntor [IRA_QGBT1_CMD_Abrir Disjuntor]
+   Nome criado: GRA_QGBT1_CMD_Abrir Disjuntor
+   XID criado:  GRA_QGBT1_CMD_Abrir Disjuntor
+   Família lógica: USINA:{PREFIXO}_QGBT1_CMD_Abrir Disjuntor
+
+
+====================================================================================================
+2. DATAPOINTS EXTRAS MANTIDOS NO JSON
+====================================================================================================
+
+1. [USINA] GRA_TRK_1.46_CAL_Desvio (%) [GRA_TRK_1.46_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.46_CAL_Desvio (%)
+
+2. [USINA] GRA_TRK_1.47_CAL_Desvio (%) [GRA_TRK_1.47_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.47_CAL_Desvio (%)
+
+3. [USINA] GRA_TRK_1.48_CAL_Desvio (%) [GRA_TRK_1.48_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.48_CAL_Desvio (%)
+
+4. [USINA] GRA_TRK_1.1_CAL_Desvio (%) [GRA_TRK_1.1_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.1_CAL_Desvio (%)
+
+5. [USINA] GRA_TRK_1.2_CAL_Desvio (%) [GRA_TRK_1.2_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.2_CAL_Desvio (%)
+
+6. [USINA] GRA_TRK_1.3_CAL_Desvio (%) [GRA_TRK_1.3_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.3_CAL_Desvio (%)
+
+7. [USINA] GRA_TRK_1.4_CAL_Desvio (%) [GRA_TRK_1.4_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.4_CAL_Desvio (%)
+
+8. [USINA] GRA_TRK_1.5_CAL_Desvio (%) [GRA_TRK_1.5_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.5_CAL_Desvio (%)
+
+9. [USINA] GRA_TRK_1.6_CAL_Desvio (%) [GRA_TRK_1.6_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.6_CAL_Desvio (%)
+
+10. [USINA] GRA_TRK_1.7_CAL_Desvio (%) [GRA_TRK_1.7_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.7_CAL_Desvio (%)
+
+11. [USINA] GRA_TRK_1.8_CAL_Desvio (%) [GRA_TRK_1.8_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.8_CAL_Desvio (%)
+
+12. [USINA] GRA_TRK_1.9_CAL_Desvio (%) [GRA_TRK_1.9_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.9_CAL_Desvio (%)
+
+13. [USINA] GRA_TRK_1.10_CAL_Desvio (%) [GRA_TRK_1.10_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.10_CAL_Desvio (%)
+
+14. [USINA] GRA_TRK_1.11_CAL_Desvio (%) [GRA_TRK_1.11_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.11_CAL_Desvio (%)
+
+15. [USINA] GRA_TRK_1.12_CAL_Desvio (%) [GRA_TRK_1.12_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.12_CAL_Desvio (%)
+
+16. [USINA] GRA_TRK_1.13_CAL_Desvio (%) [GRA_TRK_1.13_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.13_CAL_Desvio (%)
+
+17. [USINA] GRA_TRK_1.14_CAL_Desvio (%) [GRA_TRK_1.14_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.14_CAL_Desvio (%)
+
+18. [USINA] GRA_TRK_1.15_CAL_Desvio (%) [GRA_TRK_1.15_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.15_CAL_Desvio (%)
+
+19. [USINA] GRA_TRK_1.16_CAL_Desvio (%) [GRA_TRK_1.16_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.16_CAL_Desvio (%)
+
+20. [USINA] GRA_TRK_1.17_CAL_Desvio (%) [GRA_TRK_1.17_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.17_CAL_Desvio (%)
+
+21. [USINA] GRA_TRK_1.18_CAL_Desvio (%) [GRA_TRK_1.18_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.18_CAL_Desvio (%)
+
+22. [USINA] GRA_TRK_1.19_CAL_Desvio (%) [GRA_TRK_1.19_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.19_CAL_Desvio (%)
+
+23. [USINA] GRA_TRK_1.20_CAL_Desvio (%) [GRA_TRK_1.20_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.20_CAL_Desvio (%)
+
+24. [USINA] GRA_TRK_1.21_CAL_Desvio (%) [GRA_TRK_1.21_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.21_CAL_Desvio (%)
+
+25. [USINA] GRA_TRK_1.22_CAL_Desvio (%) [GRA_TRK_1.22_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.22_CAL_Desvio (%)
+
+26. [USINA] GRA_TRK_1.23_CAL_Desvio (%) [GRA_TRK_1.23_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.23_CAL_Desvio (%)
+
+27. [USINA] GRA_TRK_1.24_CAL_Desvio (%) [GRA_TRK_1.24_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.24_CAL_Desvio (%)
+
+28. [USINA] GRA_TRK_1.25_CAL_Desvio (%) [GRA_TRK_1.25_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.25_CAL_Desvio (%)
+
+29. [USINA] GRA_TRK_1.26_CAL_Desvio (%) [GRA_TRK_1.26_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.26_CAL_Desvio (%)
+
+30. [USINA] GRA_TRK_1.27_CAL_Desvio (%) [GRA_TRK_1.27_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.27_CAL_Desvio (%)
+
+31. [USINA] GRA_TRK_1.28_CAL_Desvio (%) [GRA_TRK_1.28_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.28_CAL_Desvio (%)
+
+32. [USINA] GRA_TRK_1.29_CAL_Desvio (%) [GRA_TRK_1.29_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.29_CAL_Desvio (%)
+
+33. [USINA] GRA_TRK_1.30_CAL_Desvio (%) [GRA_TRK_1.30_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.30_CAL_Desvio (%)
+
+34. [USINA] GRA_TRK_1.31_CAL_Desvio (%) [GRA_TRK_1.31_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.31_CAL_Desvio (%)
+
+35. [USINA] GRA_TRK_1.32_CAL_Desvio (%) [GRA_TRK_1.32_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.32_CAL_Desvio (%)
+
+36. [USINA] GRA_TRK_1.33_CAL_Desvio (%) [GRA_TRK_1.33_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.33_CAL_Desvio (%)
+
+37. [USINA] GRA_TRK_1.34_CAL_Desvio (%) [GRA_TRK_1.34_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.34_CAL_Desvio (%)
+
+38. [USINA] GRA_TRK_1.35_CAL_Desvio (%) [GRA_TRK_1.35_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.35_CAL_Desvio (%)
+
+39. [USINA] GRA_TRK_1.36_CAL_Desvio (%) [GRA_TRK_1.36_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.36_CAL_Desvio (%)
+
+40. [USINA] GRA_TRK_1.37_CAL_Desvio (%) [GRA_TRK_1.37_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.37_CAL_Desvio (%)
+
+41. [USINA] GRA_TRK_1.38_CAL_Desvio (%) [GRA_TRK_1.38_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.38_CAL_Desvio (%)
+
+42. [USINA] GRA_TRK_1.39_CAL_Desvio (%) [GRA_TRK_1.39_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.39_CAL_Desvio (%)
+
+43. [USINA] GRA_TRK_1.40_CAL_Desvio (%) [GRA_TRK_1.40_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.40_CAL_Desvio (%)
+
+44. [USINA] GRA_TRK_1.41_CAL_Desvio (%) [GRA_TRK_1.41_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.41_CAL_Desvio (%)
+
+45. [USINA] GRA_TRK_1.42_CAL_Desvio (%) [GRA_TRK_1.42_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.42_CAL_Desvio (%)
+
+46. [USINA] GRA_TRK_1.43_CAL_Desvio (%) [GRA_TRK_1.43_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.43_CAL_Desvio (%)
+
+47. [USINA] GRA_TRK_1.44_CAL_Desvio (%) [GRA_TRK_1.44_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.44_CAL_Desvio (%)
+
+48. [USINA] GRA_TRK_1.45_CAL_Desvio (%) [GRA_TRK_1.45_CAL_Desvio (%)]
+   Família lógica: USINA:{PREFIXO}_TRK_1.45_CAL_Desvio (%)
+
+49. [USINA] GRA_TRF1_MED_Sensor 1 - Temperatura (°C) [GRA_TRF1_MED_Sensor 1 - Temperatura (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_MED_Sensor 1 - Temperatura (°C)
+
+50. [USINA] GRA_TRF1_MED_Sensor 2 - Temperatura (°C) [GRA_TRF1_MED_Sensor 2 - Temperatura (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_MED_Sensor 2 - Temperatura (°C)
+
+51. [USINA] GRA_TRF1_MED_Sensor 3 - Temperatura (°C) [GRA_TRF1_MED_Sensor 3 - Temperatura (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_MED_Sensor 3 - Temperatura (°C)
+
+52. [USINA] GRA_TRF1_MED_Sensor 4 - Temperatura (°C) [GRA_TRF1_MED_Sensor 4 - Temperatura (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_MED_Sensor 4 - Temperatura (°C)
+
+53. [USINA] GRA_TRF1_CFG_Sensor 1 - Temperatura de Alarme (°C) [GRA_TRF1_CFG_Sensor 1 - Temperatura de Alarme (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 1 - Temperatura de Alarme (°C)
+
+54. [USINA] GRA_TRF1_CFG_Sensor 1 - Temperatura de Trip (°C) [GRA_TRF1_CFG_Sensor 1 - Temperatura de Trip (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 1 - Temperatura de Trip (°C)
+
+55. [USINA] GRA_TRF1_CFG_Sensor 1 - Temp. de Refrigeração (°C) [GRA_TRF1_CFG_Sensor 1 - Temp. de Refrigeração (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 1 - Temp. de Refrigeração (°C)
+
+56. [USINA] GRA_TRF1_CFG_Sensor 2 - Temperatura de Alarme (°C) [GRA_TRF1_CFG_Sensor 2 - Temperatura de Alarme (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 2 - Temperatura de Alarme (°C)
+
+57. [USINA] GRA_TRF1_CFG_Sensor 2 - Temperatura de Trip (°C) [GRA_TRF1_CFG_Sensor 2 - Temperatura de Trip (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 2 - Temperatura de Trip (°C)
+
+58. [USINA] GRA_TRF1_CFG_Sensor 2 - Temp. de Refrigeração (°C) [GRA_TRF1_CFG_Sensor 2 - Temp. de Refrigeração (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 2 - Temp. de Refrigeração (°C)
+
+59. [USINA] GRA_TRF1_CFG_Sensor 3 - Temperatura de Alarme (°C) [GRA_TRF1_CFG_Sensor 3 - Temperatura de Alarme (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 3 - Temperatura de Alarme (°C)
+
+60. [USINA] GRA_TRF1_CFG_Sensor 3 - Temperatura de Trip (°C) [GRA_TRF1_CFG_Sensor 3 - Temperatura de Trip (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 3 - Temperatura de Trip (°C)
+
+61. [USINA] GRA_TRF1_CFG_Sensor 3 - Temp. de Refrigeração (°C) [GRA_TRF1_CFG_Sensor 3 - Temp. de Refrigeração (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 3 - Temp. de Refrigeração (°C)
+
+62. [USINA] GRA_TRF1_CFG_Sensor 4 - Temperatura de Alarme (°C) [GRA_TRF1_CFG_Sensor 4 - Temperatura de Alarme (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 4 - Temperatura de Alarme (°C)
+
+63. [USINA] GRA_TRF1_CFG_Sensor 4 - Temperatura de Trip (°C) [GRA_TRF1_CFG_Sensor 4 - Temperatura de Trip (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 4 - Temperatura de Trip (°C)
+
+64. [USINA] GRA_TRF1_CFG_Sensor 4 - Temp. de Refrigeração (°C) [GRA_TRF1_CFG_Sensor 4 - Temp. de Refrigeração (°C)]
+   Família lógica: USINA:{PREFIXO}_TRF1_CFG_Sensor 4 - Temp. de Refrigeração (°C)
+
+
+====================================================================================================
+3. DIFERENÇAS FUNCIONAIS CORRIGIDAS NO JSON
+====================================================================================================
+
+1. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.1_CAL_Fator de Capacidade Diário [IRA_Inv_1.1_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.1_CAL_Fator de Capacidade Diário [GRA_Inv_1.1_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+2. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.2_CAL_Fator de Capacidade Diário [IRA_Inv_1.2_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.2_CAL_Fator de Capacidade Diário [GRA_Inv_1.2_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+3. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.3_CAL_Fator de Capacidade Diário [IRA_Inv_1.3_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.3_CAL_Fator de Capacidade Diário [GRA_Inv_1.3_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+4. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.4_CAL_Fator de Capacidade Diário [IRA_Inv_1.4_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.4_CAL_Fator de Capacidade Diário [GRA_Inv_1.4_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+5. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.5_CAL_Fator de Capacidade Diário [IRA_Inv_1.5_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.5_CAL_Fator de Capacidade Diário [GRA_Inv_1.5_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+6. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.6_CAL_Fator de Capacidade Diário [IRA_Inv_1.6_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.6_CAL_Fator de Capacidade Diário [GRA_Inv_1.6_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+7. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.7_CAL_Fator de Capacidade Diário [IRA_Inv_1.7_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.7_CAL_Fator de Capacidade Diário [GRA_Inv_1.7_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+8. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.8_CAL_Fator de Capacidade Diário [IRA_Inv_1.8_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.8_CAL_Fator de Capacidade Diário [GRA_Inv_1.8_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+9. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.9_CAL_Fator de Capacidade Diário [IRA_Inv_1.9_CAL_Fator de Capacidade Diário]
+   Corrigido no analisado: GRA_Inv_1.9_CAL_Fator de Capacidade Diário [GRA_Inv_1.9_CAL_Fator de Capacidade Diário]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+10. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.1_CAL_Fator de Capacidade Mensal [IRA_Inv_1.1_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.1_CAL_Fator de Capacidade Mensal [GRA_Inv_1.1_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+11. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.2_CAL_Fator de Capacidade Mensal [IRA_Inv_1.2_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.2_CAL_Fator de Capacidade Mensal [GRA_Inv_1.2_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+12. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.3_CAL_Fator de Capacidade Mensal [IRA_Inv_1.3_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.3_CAL_Fator de Capacidade Mensal [GRA_Inv_1.3_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+13. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.4_CAL_Fator de Capacidade Mensal [IRA_Inv_1.4_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.4_CAL_Fator de Capacidade Mensal [GRA_Inv_1.4_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+14. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.5_CAL_Fator de Capacidade Mensal [IRA_Inv_1.5_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.5_CAL_Fator de Capacidade Mensal [GRA_Inv_1.5_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+15. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.6_CAL_Fator de Capacidade Mensal [IRA_Inv_1.6_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.6_CAL_Fator de Capacidade Mensal [GRA_Inv_1.6_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+16. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.7_CAL_Fator de Capacidade Mensal [IRA_Inv_1.7_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.7_CAL_Fator de Capacidade Mensal [GRA_Inv_1.7_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+17. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.8_CAL_Fator de Capacidade Mensal [IRA_Inv_1.8_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.8_CAL_Fator de Capacidade Mensal [GRA_Inv_1.8_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+18. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.9_CAL_Fator de Capacidade Mensal [IRA_Inv_1.9_CAL_Fator de Capacidade Mensal]
+   Corrigido no analisado: GRA_Inv_1.9_CAL_Fator de Capacidade Mensal [GRA_Inv_1.9_CAL_Fator de Capacidade Mensal]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+19. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.1_CAL_Fator de Capacidade Anual [IRA_Inv_1.1_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.1_CAL_Fator de Capacidade Anual [GRA_Inv_1.1_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+20. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.2_CAL_Fator de Capacidade Anual [IRA_Inv_1.2_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.2_CAL_Fator de Capacidade Anual [GRA_Inv_1.2_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+21. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.3_CAL_Fator de Capacidade Anual [IRA_Inv_1.3_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.3_CAL_Fator de Capacidade Anual [GRA_Inv_1.3_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+22. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.4_CAL_Fator de Capacidade Anual [IRA_Inv_1.4_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.4_CAL_Fator de Capacidade Anual [GRA_Inv_1.4_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+23. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.5_CAL_Fator de Capacidade Anual [IRA_Inv_1.5_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.5_CAL_Fator de Capacidade Anual [GRA_Inv_1.5_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+24. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.6_CAL_Fator de Capacidade Anual [IRA_Inv_1.6_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.6_CAL_Fator de Capacidade Anual [GRA_Inv_1.6_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+25. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.7_CAL_Fator de Capacidade Anual [IRA_Inv_1.7_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.7_CAL_Fator de Capacidade Anual [GRA_Inv_1.7_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+26. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.8_CAL_Fator de Capacidade Anual [IRA_Inv_1.8_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.8_CAL_Fator de Capacidade Anual [GRA_Inv_1.8_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+27. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.9_CAL_Fator de Capacidade Anual [IRA_Inv_1.9_CAL_Fator de Capacidade Anual]
+   Corrigido no analisado: GRA_Inv_1.9_CAL_Fator de Capacidade Anual [GRA_Inv_1.9_CAL_Fator de Capacidade Anual]
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+28. [USINA]
+   Modelo espelho: IRA_CAL_PR Ajustado 1 (%) [IRA_CAL_PR Ajustado 1 (%)]
+   Corrigido no analisado: GRA_CAL_PR Ajustado 1 (%) [GRA_CAL_PR Ajustado 1 (%)]
+      - pointLocator.script: valor diferente
+         Espelho:   '// Entradas\nvar energy = energia.value; // Produção do dia em kWh\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\nvar temp = Module1.value;  // Temperatura instantânea do módulo em °C\nvar kwp = capacity.value;  // Potência pico do sistema em kW\nvar coef_temp = -0.0030;   // Coeficiente de temperatura (%/°C)\nexpectedEnergy = expected.value; // Energia esperada \n\n// Corrigir energia para Wh\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\n\n// Performance Ratio com validação\nvar PR = 0;\nif (expectedEnergy > 0) {\n    PR = energyWh / (expectedEnergy * 1000); // Energia Esperada em Wh\n    if (PR > 1) {\n        PR = 1; // Força o valor para 100% se passar de 100%\n    }\n}\n\n// Resultado final em porcentagem\nreturn PR * 100;\n'
+         Analisado: '// Entradas\nvar energy = energia.value; // Produção do dia em kWh\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\nvar kwp = capacity.value;  // Potência pico do sistema em kW\n\n// Energia esperada simples\nvar expectedEnergy = irrad * kwp;  // em Wh\n\n// Corrigir energia para Wh\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\n\n// Performance Ratio com validação\nvar PR = 0;\nif (expectedEnergy > 0) {\n    PR = energyWh / expectedEnergy; // Energia Esperada em Wh\n    if (PR > 1) {\n        PR = 1; // Força o valor para 100% se passar de 100%\n    }\n}\n\n// Resultado final em porcentagem\nreturn PR * 100;\n'
+
+29. [USINA]
+   Modelo espelho: IRA_CAL_PR Ajustado Total (%) [IRA_CAL_PR Ajustado Total (%)]
+   Corrigido no analisado: GRA_CAL_PR Ajustado Total (%) [GRA_CAL_PR Ajustado Total (%)]
+      - pointLocator.script: valor diferente
+         Espelho:   '// Entradas\nvar energy = energia.value; // Produção do dia em kWh\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\nvar temp = Module1.value;  // Temperatura instantânea do módulo em °C\nvar kwp = capacity.value;  // Potência pico do sistema em kW\nvar coef_temp = -0.0030;   // Coeficiente de temperatura (%/°C)\nexpectedEnergy = expected.value; // Energia esperada \n\n// Corrigir energia para Wh\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\n\n// Performance Ratio com validação\nvar PR = 0;\nif (expectedEnergy > 0) {\n    PR = energyWh / (expectedEnergy * 1000); // Energia Esperada em Wh\n    if (PR > 1) {\n        PR = 1; // Força o valor para 100% se passar de 100%\n    }\n}\n\n// Resultado final em porcentagem\nreturn PR * 100;\n'
+         Analisado: '// Entradas\nvar energy = energia.value; // Produção do dia em kWh\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\nvar kwp = capacity.value;  // Potência pico do sistema em kW\n\n// Energia esperada simples\nvar expectedEnergy = irrad * kwp;  // em Wh\n\n// Corrigir energia para Wh\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\n\n// Performance Ratio com validação\nvar PR = 0;\nif (expectedEnergy > 0) {\n    PR = energyWh / expectedEnergy; // Energia Esperada em Wh\n    if (PR > 1) {\n        PR = 1; // Força o valor para 100% se passar de 100%\n    }\n}\n\n// Resultado final em porcentagem\nreturn PR * 100;\n'
+
+30. [USINA]
+   Modelo espelho: IRA_CAL_Potência Ativa Total Loggers (KW) [IRA_CAL_Potência Ativa Total Loggers (KW)]
+   Corrigido no analisado: GRA_CAL_Potência Ativa Total Loggers (KW) [GRA_CAL_Potência Ativa Total Loggers (KW)]
+      - pointLocator.script: valor diferente
+         Espelho:   'return (monitor_a.value ? a.value : 0);'
+         Analisado: 'energy = (monitor_a.value ? a.value : 0);\nreturn energy;'
+
+31. [USINA]
+   Modelo espelho: IRA_RELE1_STA_Estado do Disjuntor [IRA_RELE1_STA_Estado do Disjuntor]
+   Corrigido no analisado: GRA_RELE1_STA_Estado do Disjuntor [GRA_RELE1_STA_Estado do Disjuntor]
+      - eventDetectors[0].alias: valor diferente
+         Espelho:   'UFV Iramaia - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado'
+         Analisado: 'UFV Gravatá - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado'
+      - eventDetectors[1].alias: valor diferente
+         Espelho:   'UFV Iramaia - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto'
+         Analisado: 'UFV Gravatá - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto'
+
+32. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.1_CAL_Energia Esperada (KWh) [IRA_Inv_1.1_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.1_CAL_Energia Esperada (KWh) [GRA_Inv_1.1_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+33. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.2_CAL_Energia Esperada (KWh) [IRA_Inv_1.2_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.2_CAL_Energia Esperada (KWh) [GRA_Inv_1.2_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+34. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.3_CAL_Energia Esperada (KWh) [IRA_Inv_1.3_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.3_CAL_Energia Esperada (KWh) [GRA_Inv_1.3_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+35. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.4_CAL_Energia Esperada (KWh) [IRA_Inv_1.4_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.4_CAL_Energia Esperada (KWh) [GRA_Inv_1.4_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+36. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.5_CAL_Energia Esperada (KWh) [IRA_Inv_1.5_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.5_CAL_Energia Esperada (KWh) [GRA_Inv_1.5_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+37. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.6_CAL_Energia Esperada (KWh) [IRA_Inv_1.6_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.6_CAL_Energia Esperada (KWh) [GRA_Inv_1.6_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+38. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.7_CAL_Energia Esperada (KWh) [IRA_Inv_1.7_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.7_CAL_Energia Esperada (KWh) [GRA_Inv_1.7_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+39. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.8_CAL_Energia Esperada (KWh) [IRA_Inv_1.8_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.8_CAL_Energia Esperada (KWh) [GRA_Inv_1.8_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+40. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.9_CAL_Energia Esperada (KWh) [IRA_Inv_1.9_CAL_Energia Esperada (KWh)]
+   Corrigido no analisado: GRA_Inv_1.9_CAL_Energia Esperada (KWh) [GRA_Inv_1.9_CAL_Energia Esperada (KWh)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+41. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.1_CAL_PR Ajustado (%) [IRA_Inv_1.1_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.1_CAL_PR Ajustado (%) [GRA_Inv_1.1_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+42. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.2_CAL_PR Ajustado (%) [IRA_Inv_1.2_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.2_CAL_PR Ajustado (%) [GRA_Inv_1.2_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+43. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.3_CAL_PR Ajustado (%) [IRA_Inv_1.3_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.3_CAL_PR Ajustado (%) [GRA_Inv_1.3_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+44. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.4_CAL_PR Ajustado (%) [IRA_Inv_1.4_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.4_CAL_PR Ajustado (%) [GRA_Inv_1.4_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+45. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.5_CAL_PR Ajustado (%) [IRA_Inv_1.5_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.5_CAL_PR Ajustado (%) [GRA_Inv_1.5_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+46. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.6_CAL_PR Ajustado (%) [IRA_Inv_1.6_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.6_CAL_PR Ajustado (%) [GRA_Inv_1.6_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+47. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.7_CAL_PR Ajustado (%) [IRA_Inv_1.7_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.7_CAL_PR Ajustado (%) [GRA_Inv_1.7_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+48. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.8_CAL_PR Ajustado (%) [IRA_Inv_1.8_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.8_CAL_PR Ajustado (%) [GRA_Inv_1.8_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+49. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.9_CAL_PR Ajustado (%) [IRA_Inv_1.9_CAL_PR Ajustado (%)]
+   Corrigido no analisado: GRA_Inv_1.9_CAL_PR Ajustado (%) [GRA_Inv_1.9_CAL_PR Ajustado (%)]
+      - pointLocator.context[3].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+50. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.1_CAL_PR Simples (%) [IRA_Inv_1.1_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.1_CAL_PR Simples (%) [GRA_Inv_1.1_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_1_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+51. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.2_CAL_PR Simples (%) [IRA_Inv_1.2_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.2_CAL_PR Simples (%) [GRA_Inv_1.2_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_2_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+52. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.3_CAL_PR Simples (%) [IRA_Inv_1.3_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.3_CAL_PR Simples (%) [GRA_Inv_1.3_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_3_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+53. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.4_CAL_PR Simples (%) [IRA_Inv_1.4_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.4_CAL_PR Simples (%) [GRA_Inv_1.4_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_4_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+54. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.5_CAL_PR Simples (%) [IRA_Inv_1.5_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.5_CAL_PR Simples (%) [GRA_Inv_1.5_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_5_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+55. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.6_CAL_PR Simples (%) [IRA_Inv_1.6_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.6_CAL_PR Simples (%) [GRA_Inv_1.6_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_6_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+56. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.7_CAL_PR Simples (%) [IRA_Inv_1.7_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.7_CAL_PR Simples (%) [GRA_Inv_1.7_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_7_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+57. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.8_CAL_PR Simples (%) [IRA_Inv_1.8_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.8_CAL_PR Simples (%) [GRA_Inv_1.8_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_8_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+58. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.9_CAL_PR Simples (%) [IRA_Inv_1.9_CAL_PR Simples (%)]
+   Corrigido no analisado: GRA_Inv_1.9_CAL_PR Simples (%) [GRA_Inv_1.9_CAL_PR Simples (%)]
+      - pointLocator.context[2].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_9_VIR_Potência Pico (KWp)'
+         Analisado: '{PREFIXO}_Smart1_VIR_Capacidade dos Inversores (KWp)'
+
+59. [USINA]
+   Modelo espelho: IRA_Smart1_CAL_Rendimento (%) [IRA_Smart1_CAL_Rendimento (%)]
+   Corrigido no analisado: GRA_Smart1_CAL_Rendimento (%) [GRA_Smart1_CAL_Rendimento (%)]
+      - pointLocator.script: valor diferente
+         Espelho:   'const calculo = (energia_real.value / energia_esperada.value) * 100;\n\nreturn calculo;'
+         Analisado: 'return (energia_real.value / energia_esperada.value) * 100;'
+
+60. [INVERSOR]
+   Modelo espelho: IRA_Inv_1.10_CAL_Rendimento (%) [IRA_Inv_1.10_CAL_Rendimento (%)]
+   Corrigido no analisado: GRA_Inv_1.10_CAL_Rendimento (%) [GRA_Inv_1.10_CAL_Rendimento (%)]
+      - pointLocator.context[0].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Inv_GLOBAL_10_MED_Energia Diária (KWh)'
+         Analisado: '{PREFIXO}_Inv_GLOBAL_10_MED_Potência Ativa (KW)'
+      - pointLocator.context[0].varName: valor diferente
+         Espelho:   'energia_real'
+         Analisado: 'potencia'
+      - pointLocator.context[1].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_CAL_Energia Esperada 1 (KWh)'
+         Analisado: '{PREFIXO}_Inv_GLOBAL_10_VIR_Potência Pico (KWp)'
+      - pointLocator.context[1].varName: valor diferente
+         Espelho:   'energia_esperada'
+         Analisado: 'capacity'
+      - pointLocator.script: valor diferente
+         Espelho:   'return (energia_real.value / energia_esperada.value) * 100;'
+         Analisado: 'return (potencia.value / capacity.value) * 100;'
+
+61. [USINA]
+   Modelo espelho: IRA_QGBT1_STA_Disjuntor Geral Fechado [IRA_QGBT1_STA_Disjuntor Geral Fechado]
+   Corrigido no analisado: GRA_QGBT1_STA_Disjuntor Geral Fechado [GRA_QGBT1_STA_Disjuntor Geral Fechado]
+      - eventDetectors[0].alias: valor diferente
+         Espelho:   'UFV Iramaia - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Fechado'
+         Analisado: 'UFV Gravatá - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Fechado'
+      - pointLocator.context[0].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Smart1_STA_Status - DI01'
+         Analisado: '{PREFIXO}_IO1_STA_MOD1_Estado da Entrada Digital 1'
+
+62. [USINA]
+   Modelo espelho: IRA_QGBT1_STA_Disjuntor Geral Aberto [IRA_QGBT1_STA_Disjuntor Geral Aberto]
+   Corrigido no analisado: GRA_QGBT1_STA_Disjuntor Geral Aberto [GRA_QGBT1_STA_Disjuntor Geral Aberto]
+      - enabled: valor diferente
+         Espelho:   True
+         Analisado: False
+      - eventDetectors[0].alias: valor diferente
+         Espelho:   'UFV Iramaia - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Aberto'
+         Analisado: 'UFV Gravatá - Skid GLOBAL_1 - Disjuntor Geral - Disjuntor Aberto'
+      - pointLocator.context[0].dataPointXid: valor diferente
+         Espelho:   '{PREFIXO}_Smart1_STA_Status - DI02'
+         Analisado: '{PREFIXO}_IO1_STA_MOD1_Estado da Entrada Digital 1'
+
+63. [USINA]
+   Modelo espelho: IRA_CAL_Acumulado Diário - POA (Wh/m²) [IRA_CAL_Acumulado Diário - POA (Wh/m²)]
+   Corrigido no analisado: GRA_CAL_Acumulado Diário - POA (Wh/m²) [GRA_CAL_Acumulado Diário - POA (Wh/m²)]
+      - pointLocator.context: quantidade de itens diferente — espelho=3, analisado=2
+
+
+====================================================================================================
+4. REVISÕES TOPOLOGICAS DE SCRIPT/FÓRMULA APLICADAS
+====================================================================================================
+
+Nenhuma revisão topológica necessária.
+
+====================================================================================================
+5. AVISOS DA GERAÇÃO AUTOMÁTICA
+====================================================================================================
+
+Nenhum aviso. Todos os ajustes previstos foram aplicados.

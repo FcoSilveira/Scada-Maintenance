@@ -1,0 +1,948 @@
+{
+   "dataPoints":[
+      {
+               "xid": "USN_DJBT1_ALM_Trip do Disjuntor",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 3,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_ALM_1_Trip do Disjuntor",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "CRITICAL",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Disjuntor em Trip"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_ALM_Trip do Disjuntor",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_ALM_Estado Indefinido",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 5,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_ALM_1_Estado Indefinido",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "CRITICAL",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Disjuntor Geral com Estado Indefinido"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_ALM_Estado Indefinido",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_ALM_Falha ao Abrir Disjuntor",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 7,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_ALM_1_Falha",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "CRITICAL",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Falha no Comando de Trip, atuação da Proteção de Retaguarda"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_ALM_Falha ao Abrir Disjuntor",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_MED_Corrente - Fase A (A)",
+               "loggingType": "INTERVAL",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "FOUR_BYTE_INT_SIGNED_SWAPPED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 0.1,
+                  "offset": 100,
+                  "registerCount": 2,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_MED_Corrente - Fase A (A)",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "ANALOG",
+                  "format": "0.00",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_MED_Corrente - Fase B (A)",
+               "loggingType": "INTERVAL",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "FOUR_BYTE_INT_SIGNED_SWAPPED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 0.1,
+                  "offset": 102,
+                  "registerCount": 2,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_MED_Corrente - Fase B (A)",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "ANALOG",
+                  "format": "0.00",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_MED_Corrente - Fase C (A)",
+               "loggingType": "INTERVAL",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "FOUR_BYTE_INT_UNSIGNED_SWAPPED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 0.1,
+                  "offset": 104,
+                  "registerCount": 2,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_MED_Corrente - Fase C (A)",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "ANALOG",
+                  "format": "0.00",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_MED_Fator de Pico - Fase A",
+               "loggingType": "INTERVAL",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "TWO_BYTE_INT_SIGNED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 0.001,
+                  "offset": 257,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_MED_Fator de Pico - Fase A",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "ANALOG",
+                  "format": "0.00",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_MED_Fator de Pico - Fase B",
+               "loggingType": "INTERVAL",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "TWO_BYTE_INT_SIGNED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 0.001,
+                  "offset": 258,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_MED_Fator de Pico - Fase B",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "ANALOG",
+                  "format": "0.00",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_MED_Fator de Pico - Fase C",
+               "loggingType": "INTERVAL",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "TWO_BYTE_INT_SIGNED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 0.001,
+                  "offset": 259,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_MED_Fator de Pico - Fase C",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "ANALOG",
+                  "format": "0.00",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Monitor de Conexão",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "COIL_STATUS",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 0,
+                  "registerCount": 0,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": true,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_STA_0_Monitor de Conexão",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "URGENT",
+                     "state": false,
+                     "durationType": "SECONDS",
+                     "duration": 60,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Falha de Comunicação"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Monitor de Conexão",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Número de Manobras",
+               "loggingType": "INTERVAL",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 21,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Número de Manobras",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "ANALOG",
+                  "format": "0",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Disjuntor Fechado",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_STA_1_Disjuntor Fechado",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "INFORMATION",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Disjuntor Geral Fechado"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Disjuntor Fechado",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Disjuntor Conectado",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 1,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_STA_1_Disjuntor Conectado",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "INFORMATION",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Disjuntor Conectado"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Disjuntor Conectado",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Disjuntor em Teste",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 2,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_STA_1_Disjuntor em Teste",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "INFORMATION",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Disjuntor em Teste"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Disjuntor em Teste",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Disjuntor Pronto",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 4,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_STA_1_Disjuntor Pronto",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "INFORMATION",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Disjuntor pronto para ser fechado"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Disjuntor Pronto",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Disjuntor Aberto",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 6,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_STA_1_Disjuntor Aberto",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "CRITICAL",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Disjuntor Geral Aberto"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Disjuntor Aberto",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_STA_Modo Remoto",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "INPUT_REGISTER",
+                  "modbusDataType": "BINARY",
+                  "additive": 0.0,
+                  "bit": 8,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 40,
+                  "registerCount": 1,
+                  "settableOverride": false,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [
+                  {
+                     "xid": "USN_DJBT1_STA_1_Modo Remoto",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "INFORMATION",
+                     "state": true,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Modo de Operação em Remoto"
+                  },
+                  {
+                     "xid": "USN_DJBT1_STA_0_Modo Remoto",
+                     "type": "BINARY_STATE",
+                     "alarmLevel": "INFORMATION",
+                     "state": false,
+                     "durationType": "SECONDS",
+                     "duration": 0,
+                     "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Modo de Operação em Local"
+                  }
+               ],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_STA_Modo Remoto",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            },
+      {
+               "xid": "USN_DJBT1_CMD_Abrir/Fechar",
+               "loggingType": "ON_CHANGE",
+               "intervalLoggingPeriodType": "MINUTES",
+               "intervalLoggingType": "INSTANT",
+               "purgeType": "YEARS",
+               "pointLocator": {
+                  "range": "HOLDING_REGISTER",
+                  "modbusDataType": "FOUR_BYTE_INT_UNSIGNED_SWAPPED",
+                  "additive": 0.0,
+                  "bit": 0,
+                  "charset": "ASCII",
+                  "multiplier": 1.0,
+                  "offset": 0,
+                  "registerCount": 2,
+                  "settableOverride": true,
+                  "slaveId": 1,
+                  "slaveMonitor": false,
+                  "socketMonitor": false
+               },
+               "eventDetectors": [],
+               "engineeringUnits": "",
+               "purgeStrategy": "PERIOD",
+               "chartColour": null,
+               "chartRenderer": null,
+               "dataSourceXid": "USN_DJBT1_A",
+               "defaultCacheSize": 1,
+               "description": "",
+               "deviceName": "USN_DJBT1_A",
+               "discardExtremeValues": false,
+               "discardHighLimit": 1.7976931348623157E308,
+               "discardLowLimit": -1.7976931348623157E308,
+               "enabled": true,
+               "eventTextRenderer": {
+                  "type": "EVENT_NONE"
+               },
+               "intervalLoggingPeriod": 5,
+               "name": "USN_DJBT1_CMD_Abrir/Fechar",
+               "purgePeriod": 1,
+               "purgeValuesLimit": 100,
+               "textRenderer": {
+                  "type": "PLAIN",
+                  "suffix": ""
+               },
+               "tolerance": 0.0
+            }
+   ]
+}

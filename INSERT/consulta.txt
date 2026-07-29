@@ -1,0 +1,9 @@
+SELECT
+    dp.xid,
+    FROM_UNIXTIME(pv.ts / 1000) AS data_hora
+FROM pointvalues pv
+INNER JOIN datapoints dp
+    ON dp.id = pv.dataPointId
+WHERE pv.ts BETWEEN UNIX_TIMESTAMP('2026-07-07 10:10:00') * 1000
+                AND UNIX_TIMESTAMP('2026-07-07 10:20:00') * 1000
+ORDER BY dp.xid, pv.ts;

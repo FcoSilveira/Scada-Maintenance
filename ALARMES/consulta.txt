@@ -1,0 +1,27 @@
+SELECT
+    FROM_UNIXTIME(e.activeTs/1000) AS DataHora,
+
+    CASE
+        WHEN e.typeId = 1 THEN 'DATASOURCE'
+        WHEN e.typeId = 4 THEN 'DATAPOINT'
+    END AS Tipo,
+
+    dp.xid,
+
+    dp.pointName,
+
+    e.alarmLevel,
+
+    REPLACE(REPLACE(e.shortMessage, '\r', ' '), '\n', ' ') AS Mensagem
+
+FROM events e
+
+LEFT JOIN datapoints dp
+       ON dp.id = e.typeRef1
+      AND e.typeId = 4
+
+WHERE e.typeId IN (1,4)
+
+ORDER BY e.activeTs DESC
+
+LIMIT 1000;
