@@ -19,7 +19,9 @@ Funções:
     -1.7976931348623157E308
 """
 
+import json
 import os
+import re
 import tkinter as tk
 from dataclasses import dataclass
 from tkinter import filedialog, messagebox, ttk
@@ -44,6 +46,17 @@ ARQUIVO_SAIDA_PADRAO = os.path.join(
     PASTA_SAIDA_PADRAO,
     "jsonFiltrado.json",
 )
+
+NOME_ARQUIVO_SAIDA_PADRAO = "jsonFiltrado.json"
+
+SUFIXOS_SAIDA_POR_MODO = {
+    "incluir": "filtrado_por_caractere",
+    "excluir": "removido_por_caractere",
+}
+
+
+def formatar_caminho_interface(caminho: str) -> str:
+    return os.path.normpath(caminho)
 
 
 # ==========================================================
@@ -123,7 +136,13 @@ def extrair_datapoints(
 
         elif caractere == "{":
             if nivel_objeto == 0:
-                inicio_objeto = indice
+                inicio_linha = texto.rfind("\n", 0, indice) + 1
+                margem_original = texto[inicio_linha:indice]
+
+                if margem_original.strip():
+                    inicio_objeto = indice
+                else:
+                    inicio_objeto = inicio_linha
 
             nivel_objeto += 1
 
@@ -154,6 +173,70 @@ def extrair_datapoints(
         )
 
     return datapoints
+
+
+def nome_saida_por_entrada(
+    caminho_entrada: str,
+    modo: str,
+) -> str:
+    """Sugere um nome de saida baseado no arquivo de entrada."""
+
+    pasta = os.path.dirname(os.path.abspath(caminho_entrada))
+    nome_base = os.path.splitext(os.path.basename(caminho_entrada))[0]
+    sufixo = SUFIXOS_SAIDA_POR_MODO.get(
+        modo,
+        SUFIXOS_SAIDA_POR_MODO["incluir"],
+    )
+
+    return formatar_caminho_interface(
+        os.path.join(
+            pasta,
+            f"{nome_base}_{sufixo}.json",
+        )
+    )
+
+def normalizar_objeto_para_validacao(bloco: str) -> str:
+    bloco_validacao = bloco.rstrip()
+
+    if bloco_validacao.endswith(","):
+        bloco_validacao = bloco_validacao[:-1].rstrip()
+
+    return bloco_validacao
+
+
+def extrair_xid_do_bloco(bloco: str) -> str:
+    resultado = re.search(
+        r'"xid"\s*:\s*"((?:\\.|[^"\\])*)"',
+        bloco,
+    )
+
+    if not resultado:
+        return "(xid nao encontrado)"
+
+    xid_bruto = resultado.group(1)
+
+    try:
+        return json.loads(f'"{xid_bruto}"')
+    except json.JSONDecodeError:
+        return xid_bruto
+
+
+def validar_blocos_json(blocos: list[str]) -> list[tuple[int, str, str]]:
+    invalidos = []
+
+    for indice, bloco in enumerate(blocos, start=1):
+        try:
+            json.loads(normalizar_objeto_para_validacao(bloco))
+        except json.JSONDecodeError as erro:
+            invalidos.append(
+                (
+                    indice,
+                    extrair_xid_do_bloco(bloco),
+                    str(erro),
+                )
+            )
+
+    return invalidos
 
 
 def encontrar_condicoes_no_bloco(
@@ -272,9 +355,10 @@ def gravar_json_saida(
     datapoints: list[str],
 ) -> None:
     """
-    Grava o JSON preservando os valores textuais originais.
+    Grava o JSON preservando os blocos textuais originais.
 
-    Não utiliza json.loads() nem json.dumps().
+    Nao reindenta os datapoints, para que buscas textuais do arquivo
+    original continuem funcionando no arquivo de saida.
     """
 
     pasta_saida = os.path.dirname(os.path.abspath(caminho))
@@ -284,30 +368,35 @@ def gravar_json_saida(
         exist_ok=True,
     )
 
+    linhas = [
+        "{\n",
+        '   "dataPoints":[\n',
+    ]
+
+    for indice, bloco in enumerate(datapoints):
+        bloco_preservado = normalizar_objeto_para_validacao(bloco)
+
+        linhas.append(bloco_preservado)
+
+        if indice < len(datapoints) - 1:
+            linhas.append(",")
+
+        linhas.append("\n")
+
+    linhas.append("   ]\n")
+    linhas.append("}\n")
+
+    texto_saida = "".join(linhas)
+
+    json.loads(texto_saida)
+
     with open(
         caminho,
         "w",
         encoding="utf-8",
         newline="\n",
     ) as arquivo:
-        arquivo.write("{\n")
-        arquivo.write('   "dataPoints":[\n')
-
-        for indice, bloco in enumerate(datapoints):
-            bloco_formatado = ajustar_indentacao_bloco(
-                bloco,
-                espacos=6,
-            )
-
-            arquivo.write(bloco_formatado)
-
-            if indice < len(datapoints) - 1:
-                arquivo.write(",")
-
-            arquivo.write("\n")
-
-        arquivo.write("   ]\n")
-        arquivo.write("}\n")
+        arquivo.write(texto_saida)
 
 
 # ==========================================================
@@ -323,15 +412,19 @@ class AplicacaoParticionador(tk.Tk):
         self.minsize(820, 650)
 
         self.arquivo_entrada = tk.StringVar(
-            value=ARQUIVO_ENTRADA_PADRAO
-        )
-
-        self.arquivo_saida = tk.StringVar(
-            value=ARQUIVO_SAIDA_PADRAO
+            value=formatar_caminho_interface(ARQUIVO_ENTRADA_PADRAO)
         )
 
         self.modo = tk.StringVar(
             value="incluir"
+        )
+
+        self.saida_automatica = True
+        self.arquivo_saida = tk.StringVar(
+            value=nome_saida_por_entrada(
+                self.arquivo_entrada.get(),
+                self.modo.get(),
+            )
         )
 
         self.diferenciar_maiusculas = tk.BooleanVar(
@@ -527,6 +620,7 @@ class AplicacaoParticionador(tk.Tk):
             ),
             variable=self.modo,
             value="incluir",
+            command=self.atualizar_saida_automatica_por_modo,
         ).pack(
             anchor="w",
             pady=3,
@@ -540,6 +634,7 @@ class AplicacaoParticionador(tk.Tk):
             ),
             variable=self.modo,
             value="excluir",
+            command=self.atualizar_saida_automatica_por_modo,
         ).pack(
             anchor="w",
             pady=3,
@@ -719,7 +814,7 @@ class AplicacaoParticionador(tk.Tk):
             quadro,
             text="Processar JSON",
             command=self.processar,
-            style="Acao.TButton",
+            width=18,
         ).pack(
             side="right",
         )
@@ -755,6 +850,26 @@ class AplicacaoParticionador(tk.Tk):
             anchor="w",
         )
 
+    def atualizar_saida_automatica_por_modo(self) -> None:
+        entrada = self.arquivo_entrada.get().strip()
+
+        if not entrada:
+            return
+
+        if (
+            not self.saida_automatica
+            and self.arquivo_saida.get().strip()
+        ):
+            return
+
+        self.saida_automatica = True
+        self.arquivo_saida.set(
+            nome_saida_por_entrada(
+                entrada,
+                self.modo.get(),
+            )
+        )
+
     def selecionar_arquivo_entrada(self) -> None:
         caminho = filedialog.askopenfilename(
             title="Selecionar JSON de entrada",
@@ -766,23 +881,30 @@ class AplicacaoParticionador(tk.Tk):
         )
 
         if caminho:
-            self.arquivo_entrada.set(caminho)
-
-            if not self.arquivo_saida.get().strip():
-                pasta = os.path.dirname(caminho)
-
-                self.arquivo_saida.set(
-                    os.path.join(
-                        pasta,
-                        "jsonFiltrado.json",
-                    )
-                )
+            self.arquivo_entrada.set(
+                formatar_caminho_interface(caminho)
+            )
+            self.saida_automatica = True
+            self.atualizar_saida_automatica_por_modo()
 
     def selecionar_arquivo_saida(self) -> None:
+        entrada = self.arquivo_entrada.get().strip()
+
+        if entrada:
+            saida_sugerida = nome_saida_por_entrada(
+                entrada,
+                self.modo.get(),
+            )
+            pasta_inicial = os.path.dirname(saida_sugerida)
+            arquivo_inicial = os.path.basename(saida_sugerida)
+        else:
+            pasta_inicial = PASTA_SAIDA_PADRAO
+            arquivo_inicial = NOME_ARQUIVO_SAIDA_PADRAO
+
         caminho = filedialog.asksaveasfilename(
             title="Selecionar arquivo de saída",
-            initialdir=PASTA_SAIDA_PADRAO,
-            initialfile="jsonFiltrado.json",
+            initialdir=pasta_inicial,
+            initialfile=arquivo_inicial,
             defaultextension=".json",
             filetypes=[
                 ("Arquivos JSON", "*.json"),
@@ -791,7 +913,10 @@ class AplicacaoParticionador(tk.Tk):
         )
 
         if caminho:
-            self.arquivo_saida.set(caminho)
+            self.saida_automatica = False
+            self.arquivo_saida.set(
+                formatar_caminho_interface(caminho)
+            )
 
     def adicionar_condicao_por_enter(
         self,
@@ -1071,6 +1196,7 @@ class AplicacaoParticionador(tk.Tk):
     def processar(self) -> None:
         try:
             entrada, saida, condicoes = self.validar_dados()
+            modo_atual = self.modo.get()
 
             self.status.set(
                 "Lendo e processando o arquivo..."
@@ -1103,9 +1229,30 @@ class AplicacaoParticionador(tk.Tk):
             resultado = filtrar_datapoints(
                 datapoints,
                 condicoes,
-                self.modo.get(),
+                modo_atual,
                 self.diferenciar_maiusculas.get(),
             )
+
+            invalidos = validar_blocos_json(
+                resultado.datapoints_saida
+            )
+
+            if invalidos:
+                indice, xid, erro = invalidos[0]
+                rotulo_datapoint = (
+                    "mantido"
+                    if modo_atual == "excluir"
+                    else "filtrado"
+                )
+
+                raise ValueError(
+                    "O arquivo de saida nao foi gerado porque "
+                    f"pelo menos um datapoint {rotulo_datapoint} nao e um "
+                    "objeto JSON valido.\n\n"
+                    f"Datapoint {rotulo_datapoint} numero: {indice}\n"
+                    f"XID: {xid}\n"
+                    f"Erro: {erro}"
+                )
 
             gravar_json_saida(
                 saida,
@@ -1131,7 +1278,7 @@ class AplicacaoParticionador(tk.Tk):
 
             modo_texto = (
                 "Incluir correspondentes"
-                if self.modo.get() == "incluir"
+                if modo_atual == "incluir"
                 else "Excluir correspondentes"
             )
 
